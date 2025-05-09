@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Support</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group {
+      flex: 1 1 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      background-color: #2c2c2c;
+      color: #f1f1f1;
+      border: 1px solid #444;
+      border-radius: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .support-info {
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+
+    .support-info h2 {
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .support-info p {
+      margin-bottom: 10px;
+      color: #ddd;
+    }
+
+    .support-info a {
+      color: #4aa3ff;
+      text-decoration: none;
+    }
+
+    .support-info a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 600px) {
+      .form-group.half {
+        flex: 1 1 48%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Help & Support</h1>
+
+    <form class="contact-form">
+      <div class="form-group half">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group half">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Describe your issue or question..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+
+    <div class="support-info">
+      <h2>Contact Details</h2>
+      <p><strong>Email:</strong> support@example.com</p>
+      <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+      <p><strong>FAQs:</strong> <a href="#">Visit our FAQ section</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

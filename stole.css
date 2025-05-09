@@ -1,0 +1,85 @@
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Two-tone background */
+    min-height: 100vh;
+    padding: 20px;
+    
+  }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 320px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .movies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-bottom: 100px;
+    }
+
+    .movie {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      padding-bottom: 15px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+      transition: transform 0.3s ease;
+    }
+
+    .movie:hover {
+      transform: scale(1.05);
+
+      width: 300px;
+    transition: 0.3s ease; 
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7);
+    transform: scale(1.05); 
+    
+    }
+   
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    h3 {
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+   
+
+   
+    
